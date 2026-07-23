@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracy Akinyi Abega – Graphic Designer & Visual Artist</title>
+    <meta name="description" content="Official Graphic Design Portfolio of Tracy Akinyi Abega. 5 years of professional experience in Brand Identity, Campaign Graphics, Public Sector & Commercial Visual Communication in Nairobi, Kenya.">
+    <meta name="author" content="Tracy Akinyi Abega">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-version">
+
+    <!-- Header Navigation -->
+    <header class="navbar-area sticky-header" id="navbar">
+        <div class="container navbar-container">
+            <div class="logo-box">
+                <a href="#home" class="logo-link">
+                    <span class="logo-text">Tracy Abega</span>
+                    <span class="logo-sub">Graphic Designer</span>
+                </a>
+            </div>
+
+            <nav class="main-menu d-desktop" id="mainMenu">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#features" class="nav-link">Services</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#video-reels" class="nav-link">Video Reels</a></li>
+                    <li><a href="#resume" class="nav-link">Resume</a></li>
+                    <li><a href="#clients" class="nav-link">Clients</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-right-actions">
+                <!-- Theme Switcher -->
+                <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle light dark theme">
+                    <i class="fa-solid fa-moon moon-icon"></i>
+                    <i class="fa-solid fa-sun sun-icon"></i>
+                </button>
+
+                <a href="#contact" class="btn btn-primary btn-sm d-desktop">Hire Me</a>
+
+                <!-- Mobile Menu Trigger -->
+                <button class="hamburger-btn d-mobile" id="mobileMenuBtn" aria-label="Open mobile menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer-overlay" id="mobileDrawerOverlay"></div>
+    <div class="mobile-drawer" id="mobileDrawer">
+        <div class="drawer-header">
+            <div class="logo-box">
+                <span class="logo-text">Tracy Abega</span>
+                <span class="logo-sub">Graphic Designer</span>
+            </div>
+            <button class="drawer-close-btn" id="drawerCloseBtn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="drawer-body">
+            <ul class="mobile-menu-list">
+                <li><a href="#home" class="mobile-nav-link">Home</a></li>
+                <li><a href="#about" class="mobile-nav-link">About</a></li>
+                <li><a href="#features" class="mobile-nav-link">Services</a></li>
+                <li><a href="#portfolio" class="mobile-nav-link">Portfolio</a></li>
+                <li><a href="#video-reels" class="mobile-nav-link">Video Reels</a></li>
+                <li><a href="#resume" class="mobile-nav-link">Resume</a></li>
+                <li><a href="#clients" class="mobile-nav-link">Clients</a></li>
+                <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+            </ul>
+            <div class="drawer-contact-info">
+                <div class="info-item">
+                    <i class="fa-solid fa-location-dot"></i> Nairobi, Kenya
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-phone"></i> +254 705 515 541
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-envelope"></i> tracyabega001@gmail.com
+                </div>
+            </div>
+            <div class="drawer-socials">
+                <a href="https://wa.me/254705515541" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="mailto:tracyabega001@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://drive.google.com/drive/folders/1ewSvKbVpT0B9e52W6Tt0Et0tAZGUbwM8?usp=drive_link" target="_blank" aria-label="Google Drive Portfolio"><i class="fa-brands fa-google-drive"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-subtitle">PORTFOLIO OVERVIEW</span>
+                    <h1 class="hero-title">
+                        Hi, I’m <span class="highlight-name">Tracy Akinyi Abega</span><br>
+                        a <span class="typing-text" id="typingText"></span><span class="cursor">&nbsp;</span>
+                    </h1>
+                    <p class="hero-bio">
+                        Creative graphic designer with a sharp eye for clean, purposeful design and a passion for turning client briefs into impactful visual solutions. Specializing in brand-aligned communication, campaign assets, event collateral, and government-standard materials.
+                    </p>
+
+                    <!-- Quick Contact Badges -->
+                    <div class="contact-info-badges">
+                        <div class="info-badge">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Nairobi, Kenya</span>
+                        </div>
+                        <a href="tel:+254705515541" class="info-badge link-badge">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>+254 705 515 541</span>
+                        </a>
+                        <a href="mailto:tracyabega001@gmail.com" class="info-badge link-badge">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>tracyabega001@gmail.com</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-actions-wrapper">
+                        <div class="social-share-group">
+                            <span class="group-title">FIND WITH ME</span>
+                            <div class="social-buttons">
+                                <a href="https://wa.me/254705515541" target="_blank" class="social-btn" title="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                                <a href="mailto:tracyabega001@gmail.com" class="social-btn" title="Send Email"><i class="fa-regular fa-envelope"></i></a>
+                                <a href="https://drive.google.com/drive/folders/1ewSvKbVpT0B9e52W6Tt0Et0tAZGUbwM8?usp=drive_link" target="_blank" class="social-btn" title="View Google Drive Assets"><i class="fa-brands fa-google-drive"></i></a>
+                                <a href="tel:+254705515541" class="social-btn" title="Call Me"><i class="fa-solid fa-phone"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="skills-used-group">
+                            <span class="group-title">CORE DESIGN SOFTWARE</span>
+                            <div class="skill-icons">
+                                <div class="skill-icon-box" title="Adobe Photoshop"><i class="fa-solid fa-image"></i></div>
+                                <div class="skill-icon-box" title="Adobe Illustrator"><i class="fa-solid fa-pen-nib"></i></div>
+                                <div class="skill-icon-box" title="Adobe InDesign"><i class="fa-solid fa-book-open"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-card">
+                        <img src="assets/images/tracy_avatar.png" alt="Tracy Akinyi Abega - Graphic Designer" class="hero-img">
+                        <div class="experience-badge">
+                            <span class="badge-num">5</span>
+                            <span class="badge-text">Years Professional Experience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me & Software Tools Section -->
+        <section class="section-padding about-section" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <!-- Left: About Me Text -->
+                    <div class="about-card">
+                        <span class="section-subtitle">ABOUT ME</span>
+                        <h2 class="about-title">Visual Storytelling That Drives Impact</h2>
+                        <p class="about-para">
+                            Creative graphic designer with a sharp eye for clean, purposeful design and a passion for turning client briefs into impactful visual solutions.
+                        </p>
+                        <p class="about-para">
+                            With five years of professional experience, I specialize in brand-aligned communication, campaign assets, event collateral, and government-standard materials. I combine strong conceptual thinking with meticulous attention to detail to deliver designs that are both aesthetically compelling and strategically effective.
+                        </p>
+                        <p class="about-para">
+                            Passionate about visual storytelling that drives awareness, supports development initiatives, and amplifies community voices, I thrive in collaborative environments where creativity meets clear brand guidelines.
+                        </p>
+                    </div>
+
+                    <!-- Right: Software Tools Card -->
+                    <div class="tools-card">
+                        <span class="section-subtitle">TOOLSET</span>
+                        <h2 class="about-title">Software Tools</h2>
+
+                        <div class="tool-category">
+                            <h4><i class="fa-solid fa-layer-group"></i> Core Design Software</h4>
+                            <ul>
+                                <li><i class="fa-solid fa-check"></i> Adobe Photoshop</li>
+                                <li><i class="fa-solid fa-check"></i> Adobe Illustrator</li>
+                                <li><i class="fa-solid fa-check"></i> Adobe InDesign</li>
+                            </ul>
+                        </div>
+
+                        <div class="tool-category">
+                            <h4><i class="fa-solid fa-toolbox"></i> Additional Tools</h4>
+                            <ul>
+                                <li><i class="fa-solid fa-check"></i> Microsoft Office (PowerPoint, Word, Excel)</li>
+                                <li><i class="fa-solid fa-check"></i> Canva</li>
+                                <li><i class="fa-solid fa-check"></i> Social Media Management & Content Creation platforms</li>
+                            </ul>
+                        </div>
+
+                        <div class="tool-category">
+                            <h4><i class="fa-solid fa-video"></i> Video & Motion (Supporting Skills)</h4>
+                            <ul>
+                                <li><i class="fa-solid fa-check"></i> Adobe Premiere Pro</li>
+                                <li><i class="fa-solid fa-check"></i> Final Cut Pro</li>
+                                <li><i class="fa-solid fa-check"></i> DaVinci Resolve</li>
+                                <li><i class="fa-solid fa-check"></i> Adobe Audition</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & Expertise (Numbered Pill Showcase) -->
+        <section class="section-padding expertise-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">COMPETENCIES</span>
+                    <h2 class="section-title">Skills and Expertise</h2>
+                    <p class="section-desc">Translating client briefs into clean typography, purposeful layouts, and authentic imagery.</p>
+                </div>
+
+                <div class="expertise-pills-grid">
+                    <div class="expertise-pill">
+                        <span class="pill-number">1</span>
+                        <span class="pill-text">Graphic Design & Brand Identity</span>
+                    </div>
+
+                    <div class="expertise-pill">
+                        <span class="pill-number">2</span>
+                        <span class="pill-text">Campaign & Marketing Asset Creation</span>
+                    </div>
+
+                    <div class="expertise-pill">
+                        <span class="pill-number">3</span>
+                        <span class="pill-text">Event & Promotional Poster Design</span>
+                    </div>
+
+                    <div class="expertise-pill">
+                        <span class="pill-number">4</span>
+                        <span class="pill-text">Digital & Print Collateral</span>
+                    </div>
+
+                    <div class="expertise-pill">
+                        <span class="pill-number">5</span>
+                        <span class="pill-text">Social Media Visual Strategy</span>
+                    </div>
+
+                    <div class="expertise-pill">
+                        <span class="pill-number">6</span>
+                        <span class="pill-text">Conceptual Development & Mock-ups</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="section-padding features-section" id="features">
+            <div class="container">
+                <div class="section-header text-left">
+                    <span class="section-subtitle">SERVICES</span>
+                    <h2 class="section-title">What I Offer</h2>
+                </div>
+
+                <div class="features-grid">
+                    <!-- Service 1 -->
+                    <div class="feature-card">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-pen-nib"></i>
+                        </div>
+                        <h3 class="card-title">Brand Identity & Style Guides</h3>
+                        <p class="card-desc">
+                            Crafting clean, brand-aligned visual communication, logo systems, color palettes, and government/corporate standard brand guidelines.
+                        </p>
+                        <a href="#contact" class="card-link"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="feature-card">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-bullhorn"></i>
+                        </div>
+                        <h3 class="card-title">Campaign & Marketing Assets</h3>
+                        <p class="card-desc">
+                            Developing national campaign graphics, loan guides, promotional posters, and broadcast-ready public awareness materials.
+                        </p>
+                        <a href="#contact" class="card-link"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="feature-card">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-ticket"></i>
+                        </div>
+                        <h3 class="card-title">Event & Entertainment Posters</h3>
+                        <p class="card-desc">
+                            High-impact event artwork featuring expressive typography, dynamic compositions, and strong visual hierarchy for shows & festivals.
+                        </p>
+                        <a href="#portfolio" class="card-link"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="feature-card">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+                        <h3 class="card-title">Digital & Print Collateral</h3>
+                        <p class="card-desc">
+                            Publication layouts, commemorative booklets, billboards, brochures, and government-standard print assets.
+                        </p>
+                        <a href="#portfolio" class="card-link"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Service 5 -->
+                    <div class="feature-card">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-hashtag"></i>
+                        </div>
+                        <h3 class="card-title">Social Media Visual Strategy</h3>
+                        <p class="card-desc">
+                            Purpose-built content carousels, campaign banners, and visual storytelling that amplifies community voices and brand reach.
+                        </p>
+                        <a href="#contact" class="card-link"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Service 6 -->
+                    <div class="feature-card">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-film"></i>
+                        </div>
+                        <h3 class="card-title">Video Editing & Motion Design</h3>
+                        <p class="card-desc">
+                            Supporting motion graphics, broadcast video edits, kinetic typography, and promotional reels using After Effects & Premiere Pro.
+                        </p>
+                        <a href="#video-reels" class="card-link"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Showcase / Motion Graphics Section -->
+        <section class="section-padding video-reels-section" id="video-reels">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">MOTION GRAPHICS & VIDEO REELS</span>
+                    <h2 class="section-title">Featured Video Showcase</h2>
+                    <p class="section-desc">Broadcast-ready content, motion graphics, and visual stories created by Tracy.</p>
+                </div>
+
+                <div class="video-grid">
+                    <!-- Video 1 -->
+                    <div class="video-card">
+                        <div class="video-thumbnail-box">
+                            <img src="https://img.youtube.com/vi/ZWeJdB6H788/hqdefault.jpg" alt="Motion Graphics Showcase 01" class="video-thumb">
+                            <button class="play-video-btn" data-video-id="ZWeJdB6H788" data-video-title="Motion Graphics Showcase Reel 01">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="video-card-body">
+                            <span class="video-category">Motion Design / Video Edit</span>
+                            <h3 class="video-title">Motion Graphics Showcase Reel 01</h3>
+                            <button class="btn-text play-video-link" data-video-id="ZWeJdB6H788" data-video-title="Motion Graphics Showcase Reel 01">Watch Reel <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Video 2 -->
+                    <div class="video-card">
+                        <div class="video-thumbnail-box">
+                            <img src="https://img.youtube.com/vi/j4peFHLHqpc/hqdefault.jpg" alt="Visual Effects Showcase 02" class="video-thumb">
+                            <button class="play-video-btn" data-video-id="j4peFHLHqpc" data-video-title="Visual Effects & Brand Motion 02">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="video-card-body">
+                            <span class="video-category">VFX & Broadcast Motion</span>
+                            <h3 class="video-title">Visual Effects & Brand Motion 02</h3>
+                            <button class="btn-text play-video-link" data-video-id="j4peFHLHqpc" data-video-title="Visual Effects & Brand Motion 02">Watch Reel <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Video 3 -->
+                    <div class="video-card">
+                        <div class="video-thumbnail-box">
+                            <img src="https://img.youtube.com/vi/Z5L4V-DS_vk/hqdefault.jpg" alt="Promotional Commercial 03" class="video-thumb">
+                            <button class="play-video-btn" data-video-id="Z5L4V-DS_vk" data-video-title="Creative Promotional Commercial 03">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="video-card-body">
+                            <span class="video-category">Commercial & Campaign</span>
+                            <h3 class="video-title">Creative Promotional Commercial 03</h3>
+                            <button class="btn-text play-video-link" data-video-id="Z5L4V-DS_vk" data-video-title="Creative Promotional Commercial 03">Watch Reel <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Video 4 -->
+                    <div class="video-card">
+                        <div class="video-thumbnail-box">
+                            <img src="https://img.youtube.com/vi/nuC5MfQJVFo/hqdefault.jpg" alt="Social Media Reel 04" class="video-thumb">
+                            <button class="play-video-btn" data-video-id="nuC5MfQJVFo" data-video-title="Social Media Motion Campaign 04">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="video-card-body">
+                            <span class="video-category">Social Media Campaign</span>
+                            <h3 class="video-title">Social Media Motion Campaign 04</h3>
+                            <button class="btn-text play-video-link" data-video-id="nuC5MfQJVFo" data-video-title="Social Media Motion Campaign 04">Watch Reel <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Video 5 -->
+                    <div class="video-card highlight-video">
+                        <div class="video-thumbnail-box">
+                            <img src="https://img.youtube.com/vi/g29GsPEXQKs/hqdefault.jpg" alt="Graphic Design Portfolio Highlights 05" class="video-thumb">
+                            <button class="play-video-btn" data-video-id="g29GsPEXQKs" data-video-title="Graphic Design Portfolio Highlights 05">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="video-card-body">
+                            <span class="video-category">Full Portfolio Reel</span>
+                            <h3 class="video-title">Graphic Design Portfolio Highlights 05</h3>
+                            <button class="btn-text play-video-link" data-video-id="g29GsPEXQKs" data-video-title="Graphic Design Portfolio Highlights 05">Watch Reel <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Showcase Section -->
+        <section class="section-padding portfolio-section" id="portfolio">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">PROJECT CASE STUDIES</span>
+                    <h2 class="section-title">Featured Design Work</h2>
+                </div>
+
+                <!-- Google Drive Banner CTA -->
+                <div class="gdrive-banner-card">
+                    <div class="banner-content">
+                        <i class="fa-brands fa-google-drive banner-icon"></i>
+                        <div>
+                            <h3>Access Tracy's Full Design Assets Drive</h3>
+                            <p>Explore complete brand design folders, national campaign prints, Uwezo Fund loan guides, and event posters.</p>
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1ewSvKbVpT0B9e52W6Tt0Et0tAZGUbwM8?usp=drive_link" target="_blank" class="btn btn-secondary">
+                        Open Google Drive <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+
+                <!-- REAL CASE STUDIES SHOWCASE LIST -->
+                <div class="case-studies-list">
+
+                    <!-- Case Study 1: Utamaduni Day -->
+                    <div class="featured-case-study">
+                        <div class="case-study-badge">NATIONAL CELEBRATION GRAPHIC</div>
+                        <div class="case-study-grid">
+                            <div class="case-study-content">
+                                <h3>Utamaduni Day Commemorative Graphic</h3>
+                                <span class="case-role">Role: Graphic Designer (Ministry of Co-operatives and MSMEs)</span>
+                                <div class="case-focus">
+                                    <strong>Focus Area:</strong>
+                                    <p>Designed a patriotic commemorative graphic for national celebrations. Delivered a clean composition, symbolic colour use, and culturally relevant elements that fully aligned with official government brand guidelines.</p>
+                                </div>
+                                <div class="case-highlights">
+                                    <span><i class="fa-solid fa-landmark"></i> Uwezo Fund / Govt Guidelines</span>
+                                    <span><i class="fa-solid fa-flag"></i> Cultural Diversity & Heritage</span>
+                                </div>
+                                <a href="https://drive.google.com/drive/folders/1ewSvKbVpT0B9e52W6Tt0Et0tAZGUbwM8?usp=drive_link" target="_blank" class="btn btn-primary btn-sm">View In Drive <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                            <div class="case-study-preview">
+                                <img src="assets/images/brand_identity.png" alt="Utamaduni Day Commemorative Graphic">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Case Study 2: Mashujaa Day -->
+                    <div class="featured-case-study">
+                        <div class="case-study-badge">NATIONAL HEROES DAY</div>
+                        <div class="case-study-grid">
+                            <div class="case-study-content">
+                                <h3>Mashujaa Day Commemorative Graphic</h3>
+                                <span class="case-role">Role: Graphic Designer (Ministry of Co-operatives and MSMEs)</span>
+                                <div class="case-focus">
+                                    <strong>Focus Area:</strong>
+                                    <p>Created a patriotic commemorative graphic incorporating the Kenyan flag. Focused on clean layout, symbolic imagery, and strict adherence to government brand guidelines for national campaigns and events.</p>
+                                </div>
+                                <div class="case-highlights">
+                                    <span><i class="fa-solid fa-shield-halved"></i> National Heroes Tribute</span>
+                                    <span><i class="fa-solid fa-check-double"></i> Strict Brand Adherence</span>
+                                </div>
+                                <a href="https://drive.google.com/drive/folders/1ewSvKbVpT0B9e52W6Tt0Et0tAZGUbwM8?usp=drive_link" target="_blank" class="btn btn-primary btn-sm">View In Drive <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                            <div class="case-study-preview">
+                                <img src="assets/images/poster_design.png" alt="Mashujaa Day Commemorative Graphic">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Case Study 3: 2nd MSMEs Connect Embu -->
+                    <div class="featured-case-study">
+                        <div class="case-study-badge">GOVERNMENT DIALOGUE POSTER</div>
+                        <div class="case-study-grid">
+                            <div class="case-study-content">
+                                <h3>2nd MSMEs CONNECT, EMBU EDITION</h3>
+                                <span class="case-role">Role: Graphic Designer (Ministry of Co-operatives And MSMEs)</span>
+                                <div class="case-focus">
+                                    <strong>Focus Area:</strong>
+                                    <p>Designed a formal government event poster with a clean structure and strong visual hierarchy. Integrated official logos, national colours, and institutional branding to ensure credibility and clarity for a public-sector audience.</p>
+                                </div>
+                                <div class="case-highlights">
+                                    <span><i class="fa-solid fa-user-tie"></i> Cabinet Secretary & Governor Layout</span>
+                                    <span><i class="fa-solid fa-building"></i> Embu University Venue</span>
+                                </div>
+                                <a href="https://drive.google.com/drive/folders/1ewSvKbVpT0B9e52W6Tt0Et0tAZGUbwM8?usp=drive_link" target="_blank" class="btn btn-primary btn-sm">View In Drive <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                            <div class="case-study-preview">
+                                <img src="assets/images/packaging_design.png" alt="2nd MSMEs Connect Embu Edition">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Case Study 4: Old School Edition Laughs Made In Kenya -->
+                    <div class="featured-case-study">
+                        <div class="case-study-badge">RETRO COMEDY SHOW POSTER</div>
+                        <div class="case-study-grid">
+                            <div class="case-study-content">
+                                <h3>Old School Edition – Laughs Made In Kenya</h3>
+                                <span class="case-role">Role: Graphic Designer (Laughs Made In Kenya / SK Entertainment)</span>
+                                <div class="case-focus">
+                                    <strong>Focus Area:</strong>
+                                    <p>Led the visual concept and design execution for the event poster, focusing on bold typography, cohesive color grading, and retro-inspired styling to capture the “Old School” theme. Ensured clear information hierarchy, engaging composition, and brand alignment to create a visually striking and audience-targeted promotional asset.</p>
+                                </div>
+                                <div class="case-highlights">
+                                    <span><i class="fa-solid fa-music"></i> Featuring Jua Cali</span>
+                                    <span><i class="fa-solid fa-hotel"></i> Argyle Grand Hotel Nairobi</span>
+                                </div>
+                                <a href="https://drive.google.com/drive/folders/1ewSvKbVpT0B9e52W6Tt0Et0tAZGUbwM8?usp=drive_link" target="_blank" class="btn btn-primary btn-sm">View In Drive <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                            <div class="case-study-preview">
+                                <img src="assets/images/poster_design.png" alt="Laughs Made In Kenya Old School Edition">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Case Study 5: Wamusyi Cultural Show -->
+                    <div class="featured-case-study">
+                        <div class="case-study-badge">CULTURAL SHOWCASE POSTER</div>
+                        <div class="case-study-grid">
+                            <div class="case-study-content">
+                                <h3>Wamusyi Cultural Show (Machakos Edition)</h3>
+                                <span class="case-role">Role: Graphic Designer (Wamusyi Show)</span>
+                                <div class="case-focus">
+                                    <strong>Focus Area:</strong>
+                                    <p>Designed a culturally inspired event poster highlighting the Wamusyi Show, incorporating traditional visual elements, vibrant colours, and expressive typography. Focused on showcasing cultural identity, enhancing visual appeal, and ensuring clear communication of event details while creating an engaging and authentic audience connection.</p>
+                                </div>
+                                <div class="case-highlights">
+                                    <span><i class="fa-solid fa-drum"></i> Cultural Identity & Expressive Typography</span>
+                                    <span><i class="fa-solid fa-location-dot"></i> Semara Hotel Machakos</span>
+                                </div>
+                                <a href="https://drive.google.com/drive/folders/1ewSvKbVpT0B9e52W6Tt0Et0tAZGUbwM8?usp=drive_link" target="_blank" class="btn btn-primary btn-sm">View In Drive <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                            <div class="case-study-preview">
+                                <img src="assets/images/brand_identity.png" alt="Wamusyi Cultural Show Machakos">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Case Study 6: 3 SIMPS AND A GAL TOE TOE -->
+                    <div class="featured-case-study">
+                        <div class="case-study-badge">ENTERTAINMENT EVENT</div>
+                        <div class="case-study-grid">
+                            <div class="case-study-content">
+                                <h3>“3 SIMPS AND A GAL TOE TOE”</h3>
+                                <span class="case-role">Role: Graphic Designer (Vibes And Laughs)</span>
+                                <div class="case-focus">
+                                    <strong>Focus Area:</strong>
+                                    <p>Conceptualised and designed a bold promotional poster for an entertainment event. Delivered expressive typography, dynamic composition, and strong visual hierarchy that captured the show's playful energy while maintaining professional entertainment branding standards.</p>
+                                </div>
+                                <div class="case-highlights">
+                                    <span><i class="fa-solid fa-star"></i> Guest Star: Avril</span>
+                                    <span><i class="fa-solid fa-masks-theater"></i> Comedy, Music & Poetry</span>
+                                </div>
+                                <a href="https://drive.google.com/drive/folders/1ewSvKbVpT0B9e52W6Tt0Et0tAZGUbwM8?usp=drive_link" target="_blank" class="btn btn-primary btn-sm">View In Drive <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                            <div class="case-study-preview">
+                                <img src="assets/images/packaging_design.png" alt="3 Simps and a Gal Toe Toe Event Poster">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Category Filters -->
+                <div class="portfolio-filter-nav">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="campaign">Govt & National Campaigns</button>
+                    <button class="filter-btn" data-filter="poster">Event & Cultural Posters</button>
+                    <button class="filter-btn" data-filter="branding">Brand Identity</button>
+                    <button class="filter-btn" data-filter="motion">Motion & Broadcast</button>
+                </div>
+
+                <!-- Portfolio Grid -->
+                <div class="portfolio-grid">
+                    <!-- Project 1 -->
+                    <div class="portfolio-card" data-category="campaign">
+                        <div class="portfolio-img-box">
+                            <img src="assets/images/brand_identity.png" alt="Utamaduni Day Commemorative Graphic">
+                            <div class="portfolio-overlay">
+                                <span class="category-tag">Govt Campaign</span>
+                                <h3>Utamaduni Day Commemorative Graphic</h3>
+                                <a href="https://drive.google.com/drive/folders/1ewSvKbVpT0B9e52W6Tt0Et0tAZGUbwM8?usp=drive_link" target="_blank" class="view-project-btn"><i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="portfolio-card" data-category="campaign">
+                        <div class="portfolio-img-box">
+                            <img src="assets/images/poster_design.png" alt="Mashujaa Day Commemorative Graphic">
+                            <div class="portfolio-overlay">
+                                <span class="category-tag">Govt Campaign</span>
+                                <h3>Mashujaa Day Commemorative Graphic</h3>
+                                <a href="https://drive.google.com/drive/folders/1ewSvKbVpT0B9e52W6Tt0Et0tAZGUbwM8?usp=drive_link" target="_blank" class="view-project-btn"><i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="portfolio-card" data-category="campaign">
+                        <div class="portfolio-img-box">
+                            <img src="assets/images/packaging_design.png" alt="2nd MSMEs Connect Embu Edition">
+                            <div class="portfolio-overlay">
+                                <span class="category-tag">Govt Dialogue</span>
+                                <h3>2nd MSMEs CONNECT, EMBU EDITION</h3>
+                                <a href="https://drive.google.com/drive/folders/1ewSvKbVpT0B9e52W6Tt0Et0tAZGUbwM8?usp=drive_link" target="_blank" class="view-project-btn"><i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="portfolio-card" data-category="poster">
+                        <div class="portfolio-img-box">
+                            <img src="assets/images/poster_design.png" alt="Old School Edition Laughs Made In Kenya">
+                            <div class="portfolio-overlay">
+                                <span class="category-tag">Event Poster</span>
+                                <h3>Laughs Made In Kenya (Jua Cali)</h3>
+                                <a href="https://drive.google.com/drive/folders/1ewSvKbVpT0B9e52W6Tt0Et0tAZGUbwM8?usp=drive_link" target="_blank" class="view-project-btn"><i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="portfolio-card" data-category="poster">
+                        <div class="portfolio-img-box">
+                            <img src="assets/images/brand_identity.png" alt="Wamusyi Cultural Show Machakos">
+                            <div class="portfolio-overlay">
+                                <span class="category-tag">Cultural Poster</span>
+                                <h3>Wamusyi Cultural Show (Machakos Edition)</h3>
+                                <a href="https://drive.google.com/drive/folders/1ewSvKbVpT0B9e52W6Tt0Et0tAZGUbwM8?usp=drive_link" target="_blank" class="view-project-btn"><i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6 -->
+                    <div class="portfolio-card" data-category="poster">
+                        <div class="portfolio-img-box">
+                            <img src="assets/images/packaging_design.png" alt="3 Simps and a Gal Toe Toe">
+                            <div class="portfolio-overlay">
+                                <span class="category-tag">Entertainment Poster</span>
+                                <h3>3 Simps and a Gal Toe Toe (Avril)</h3>
+                                <a href="https://drive.google.com/drive/folders/1ewSvKbVpT0B9e52W6Tt0Et0tAZGUbwM8?usp=drive_link" target="_blank" class="view-project-btn"><i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume & Experience Section -->
+        <section class="section-padding resume-section" id="resume">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">EXPERIENCE SUMMARY</span>
+                    <h2 class="section-title">My Experience & Education</h2>
+                    <p class="section-desc">5 years of professional experience in concept development, brand-aligned visual communication, and end-to-end design production.</p>
+                </div>
+
+                <div class="resume-tabs-nav">
+                    <button class="tab-btn active" data-tab="experienceTab">Professional Experience</button>
+                    <button class="tab-btn" data-tab="educationTab">Education & Profile</button>
+                    <button class="tab-btn" data-tab="skillsTab">Core Design Tools</button>
+                </div>
+
+                <div class="tab-content-wrapper">
+                    <!-- Experience Tab -->
+                    <div class="tab-pane active" id="experienceTab">
+                        <div class="timeline-wrapper">
+                            <div class="timeline-card">
+                                <span class="time-period">Government Sector</span>
+                                <h3>Graphic Designer</h3>
+                                <span class="company-name">Ministry of Co-operatives and MSMEs (Uwezo Fund)</span>
+                                <p>Designed national campaign graphics, Utamaduni & Mashujaa Day commemorative graphics, 2nd MSMEs Connect posters, loan guides, and materials aligned with official government brand guidelines.</p>
+                            </div>
+
+                            <div class="timeline-card">
+                                <span class="time-period">Public Broadcasting</span>
+                                <h3>Graphic Designer & Videographer</h3>
+                                <span class="company-name">Kenya Broadcasting Corporation (KBC)</span>
+                                <p>Produced visual stories, graphics, and broadcast-ready content for public-awareness campaigns.</p>
+                            </div>
+
+                            <div class="timeline-card">
+                                <span class="time-period">Commercial & Entertainment</span>
+                                <h3>Freelance Graphic Designer</h3>
+                                <span class="company-name">SK Entertainment, Crystal Paints, Vibes & Laughs, Wamusyi Show</span>
+                                <p>Created high-impact event posters (Old School Edition ft. Jua Cali, 3 Simps & A Gal ft. Avril, Wamusyi Show), commercial advertisements, branding assets, and promotional materials.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Education Tab -->
+                    <div class="tab-pane" id="educationTab">
+                        <div class="timeline-wrapper">
+                            <div class="timeline-card">
+                                <span class="time-period">Higher Education</span>
+                                <h3>Bachelor’s Degree in Journalism And Mass Communication</h3>
+                                <span class="company-name">Chuka University, Kenya</span>
+                                <p>Comprehensive grounding in visual storytelling, media production, public communication, strategic layout, and graphic design principles.</p>
+                            </div>
+
+                            <div class="timeline-card">
+                                <span class="time-period">Professional Profile</span>
+                                <h3>5 Years Professional Experience</h3>
+                                <span class="company-name">Public Sector & Commercial Client Specialist</span>
+                                <p>Specialised in translating complex client briefs into clean typography, purposeful layouts, and authentic imagery that balances aesthetics with strategic communication.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skills & Tools Tab -->
+                    <div class="tab-pane" id="skillsTab">
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Adobe Photoshop (Core Design)</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 95%;"></div></div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Adobe Illustrator (Vector Artwork & Branding)</span>
+                                    <span>92%</span>
+                                </div>
+                                <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 92%;"></div></div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Adobe InDesign (Publication Layouts)</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 90%;"></div></div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Adobe Premiere Pro (Video Editing)</span>
+                                    <span>88%</span>
+                                </div>
+                                <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 88%;"></div></div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Final Cut Pro & DaVinci Resolve</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 85%;"></div></div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>MS Office & Canva</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 95%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Clients Section -->
+        <section class="section-padding clients-section" id="clients">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">KEY CLIENTS & PARTNERS</span>
+                    <h2 class="section-title">Trusted By Public & Private Organizations</h2>
+                    <p class="section-desc">Delivering brand-aligned visual solutions across government funds, national broadcasters, and private commercial brands.</p>
+                </div>
+
+                <div class="clients-badge-grid">
+                    <div class="client-badge-card">
+                        <i class="fa-solid fa-building-columns client-icon"></i>
+                        <h4>Ministry of Co-operatives & MSMEs</h4>
+                        <span>Uwezo Fund</span>
+                    </div>
+
+                    <div class="client-badge-card">
+                        <i class="fa-solid fa-tv client-icon"></i>
+                        <h4>Kenya Broadcasting Corporation</h4>
+                        <span>KBC Media</span>
+                    </div>
+
+                    <div class="client-badge-card">
+                        <i class="fa-solid fa-paint-roller client-icon"></i>
+                        <h4>Crystal Paints</h4>
+                        <span>Commercial Brand</span>
+                    </div>
+
+                    <div class="client-badge-card">
+                        <i class="fa-solid fa-masks-theater client-icon"></i>
+                        <h4>SK Entertainment</h4>
+                        <span>Laughs Made in Kenya</span>
+                    </div>
+
+                    <div class="client-badge-card">
+                        <i class="fa-solid fa-microphone-lines client-icon"></i>
+                        <h4>Vibes and Laughs</h4>
+                        <span>Live Event Entertainment</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section-padding contact-section" id="contact">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">CONTACT ME</span>
+                    <h2 class="section-title">Get In Touch With Tracy</h2>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Left: Contact Details Card -->
+                    <div class="contact-detail-card">
+                        <div class="card-img-box">
+                            <img src="assets/images/tracy_avatar.png" alt="Tracy Akinyi Abega Contact">
+                        </div>
+                        <div class="card-info-content">
+                            <h3>Tracy Akinyi Abega</h3>
+                            <span class="designation">Graphic Designer & Visual Artist</span>
+                            <p class="available-text">
+                                Available for freelance design projects, campaign contracts, and full-time brand consultations in Nairobi and remotely.
+                            </p>
+
+                            <div class="contact-meta-list">
+                                <div class="meta-item">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <div>
+                                        <strong>Location:</strong>
+                                        <p>Nairobi, Kenya.</p>
+                                    </div>
+                                </div>
+
+                                <div class="meta-item">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <div>
+                                        <strong>Phone / Call:</strong>
+                                        <p><a href="tel:+254705515541">+254 705 515 541</a></p>
+                                    </div>
+                                </div>
+
+                                <div class="meta-item">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <div>
+                                        <strong>Email Address:</strong>
+                                        <p><a href="mailto:tracyabega001@gmail.com">tracyabega001@gmail.com</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="quick-contact-actions">
+                                <a href="https://wa.me/254705515541?text=Hi%20Tracy,%20I'd%20like%20to%20discuss%20a%20graphic%20design%20project!" target="_blank" class="btn btn-whatsapp">
+                                    <i class="fa-brands fa-whatsapp"></i> WhatsApp Me
+                                </a>
+                                <a href="https://drive.google.com/drive/folders/1ewSvKbVpT0B9e52W6Tt0Et0tAZGUbwM8?usp=drive_link" target="_blank" class="btn btn-secondary">
+                                    <i class="fa-brands fa-google-drive"></i> Google Drive
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Contact Form -->
+                    <div class="contact-form-card">
+                        <form id="portfolioContactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="userName">YOUR NAME</label>
+                                    <input type="text" id="userName" required placeholder="e.g. John Doe">
+                                </div>
+                                <div class="form-group">
+                                    <label for="userPhone">PHONE NUMBER</label>
+                                    <input type="tel" id="userPhone" placeholder="+254 712 345 678">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="userEmail">EMAIL ADDRESS</label>
+                                <input type="email" id="userEmail" required placeholder="your.email@domain.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="userSubject">SUBJECT</label>
+                                <input type="text" id="userSubject" required placeholder="e.g. Campaign Poster & Brand Identity Inquiry">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="userMessage">YOUR MESSAGE</label>
+                                <textarea id="userMessage" rows="5" required placeholder="Describe your design project or initiative..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block">
+                                SEND MESSAGE <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+
+                            <div id="formStatusMessage" class="form-status-msg"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-area">
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <span class="logo-text">Tracy Akinyi Abega</span>
+                <span class="logo-sub">Graphic Designer</span>
+            </div>
+            <p class="copyright-text">
+                &copy; 2026 Tracy Akinyi Abega. All Rights Reserved. Built with passion in Nairobi, Kenya.
+            </p>
+            <div class="footer-socials">
+                <a href="https://wa.me/254705515541" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="mailto:tracyabega001@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://drive.google.com/drive/folders/1ewSvKbVpT0B9e52W6Tt0Et0tAZGUbwM8?usp=drive_link" target="_blank" aria-label="Google Drive"><i class="fa-brands fa-google-drive"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Video Modal Lightbox -->
+    <div class="video-modal-overlay" id="videoModalOverlay">
+        <div class="video-modal-container">
+            <button class="video-modal-close" id="videoModalCloseBtn"><i class="fa-solid fa-xmark"></i></button>
+            <h3 class="video-modal-title" id="videoModalTitle">Watch Video Reel</h3>
+            <div class="video-iframe-wrapper">
+                <iframe id="videoModalIframe" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back To Top Button -->
+    <button class="back-to-top-btn" id="backToTopBtn" aria-label="Scroll back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>
