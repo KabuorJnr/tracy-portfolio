@@ -587,10 +587,10 @@ body.light-version .moon-icon { display: block; }
 
 .hero-img {
     width: 100%;
-    height: 550px;
+    height: 480px;
     border-radius: 14px;
     object-fit: cover;
-    object-position: top center;
+    object-position: center;
 }
 
 .experience-badge {
@@ -1352,9 +1352,9 @@ body.light-version .moon-icon { display: block; }
 
 .card-img-box img {
     width: 100%;
-    height: 320px;
+    height: 300px;
     object-fit: cover;
-    object-position: top center;
+    object-position: center;
 }
 
 .card-info-content h3 {
