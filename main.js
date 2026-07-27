@@ -1,6 +1,6 @@
 /* ==========================================================================
    Tracy Akinyi Abega - Graphic Designer Portfolio JavaScript
-   Handles Theme Switch, Typewriter, Video Modal, Scrollspy, Filters, & Forms
+   Handles Theme Switch, Typewriter, Video Modal, Portfolio Modal, Scrollspy, Filters, & Forms
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -210,7 +210,81 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    /* --- 7. Resume Tabs Switcher --- */
+    /* --- 7. Portfolio Detail Modal --- */
+    const portfolioModalOverlay = document.getElementById('portfolioModalOverlay');
+    const portfolioModalCloseBtn = document.getElementById('portfolioModalCloseBtn');
+    const portfolioModalImg = document.getElementById('portfolioModalImg');
+    const portfolioModalBadge = document.getElementById('portfolioModalBadge');
+    const portfolioModalTitle = document.getElementById('portfolioModalTitle');
+    const portfolioModalRole = document.getElementById('portfolioModalRole');
+    const portfolioModalDesc = document.getElementById('portfolioModalDesc');
+    const portfolioModalTags = document.getElementById('portfolioModalTags');
+
+    // Attach click to each portfolio card
+    portfolioCards.forEach(card => {
+        card.addEventListener('click', (e) => {
+            // Don't open modal if they clicked an external link
+            if (e.target.closest('a')) return;
+
+            const title = card.getAttribute('data-title');
+            const role = card.getAttribute('data-role');
+            const badge = card.getAttribute('data-badge');
+            const desc = card.getAttribute('data-desc');
+            const tags = card.getAttribute('data-tags');
+            const img = card.getAttribute('data-img');
+
+            if (title && portfolioModalOverlay) {
+                portfolioModalImg.src = img;
+                portfolioModalImg.alt = title;
+                portfolioModalBadge.textContent = badge;
+                portfolioModalTitle.textContent = title;
+                portfolioModalRole.textContent = 'Role: ' + role;
+                portfolioModalDesc.textContent = desc;
+
+                // Build tag pills
+                portfolioModalTags.innerHTML = '';
+                if (tags) {
+                    tags.split(', ').forEach(tag => {
+                        const pill = document.createElement('span');
+                        pill.className = 'tag-pill';
+                        pill.innerHTML = `<i class="fa-solid fa-tag"></i> ${tag}`;
+                        portfolioModalTags.appendChild(pill);
+                    });
+                }
+
+                portfolioModalOverlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+    });
+
+    function closePortfolioModal() {
+        portfolioModalOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    if (portfolioModalCloseBtn) portfolioModalCloseBtn.addEventListener('click', closePortfolioModal);
+    if (portfolioModalOverlay) {
+        portfolioModalOverlay.addEventListener('click', (e) => {
+            if (e.target === portfolioModalOverlay) {
+                closePortfolioModal();
+            }
+        });
+    }
+
+    // Close modals with Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            if (portfolioModalOverlay && portfolioModalOverlay.classList.contains('active')) {
+                closePortfolioModal();
+            }
+            if (videoModalOverlay && videoModalOverlay.classList.contains('active')) {
+                closeVideoModal();
+            }
+        }
+    });
+
+    /* --- 8. Resume Tabs Switcher --- */
     const tabButtons = document.querySelectorAll('.tab-btn');
     const tabPanes = document.querySelectorAll('.tab-pane');
 
@@ -229,7 +303,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    /* --- 8. Contact Form Submission --- */
+    /* --- 9. Contact Form Submission --- */
     const contactForm = document.getElementById('portfolioContactForm');
     const formStatusMessage = document.getElementById('formStatusMessage');
 

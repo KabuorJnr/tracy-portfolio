@@ -10,7 +10,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- FontAwesome 6 Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -38,7 +38,6 @@
                     <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
                     <li><a href="#video-reels" class="nav-link">Video Reels</a></li>
                     <li><a href="#resume" class="nav-link">Resume</a></li>
-                    <li><a href="#clients" class="nav-link">Clients</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
@@ -78,7 +77,6 @@
                 <li><a href="#portfolio" class="mobile-nav-link">Portfolio</a></li>
                 <li><a href="#video-reels" class="mobile-nav-link">Video Reels</a></li>
                 <li><a href="#resume" class="mobile-nav-link">Resume</a></li>
-                <li><a href="#clients" class="mobile-nav-link">Clients</a></li>
                 <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
             </ul>
             <div class="drawer-contact-info">
@@ -107,7 +105,7 @@
                 <div class="hero-content">
                     <span class="hero-subtitle">PORTFOLIO OVERVIEW</span>
                     <h1 class="hero-title">
-                        Hi, I’m <span class="highlight-name">Tracy Akinyi Abega</span><br>
+                        Hi, I'm <span class="highlight-name">Tracy Akinyi Abega</span><br>
                         a <span class="typing-text" id="typingText"></span><span class="cursor">&nbsp;</span>
                     </h1>
                     <p class="hero-bio">
@@ -164,8 +162,8 @@
             </div>
         </section>
 
-        <!-- About Me & Software Tools Section -->
-        <section class="section-padding about-section" id="about">
+        <!-- About Me & Software Tools Section (with merged skills) -->
+        <section class="section-padding-compact about-section" id="about">
             <div class="container">
                 <div class="about-grid">
                     <!-- Left: About Me Text -->
@@ -178,9 +176,19 @@
                         <p class="about-para">
                             With five years of professional experience, I specialize in brand-aligned communication, campaign assets, event collateral, and government-standard materials. I combine strong conceptual thinking with meticulous attention to detail to deliver designs that are both aesthetically compelling and strategically effective.
                         </p>
-                        <p class="about-para">
-                            Passionate about visual storytelling that drives awareness, supports development initiatives, and amplifies community voices, I thrive in collaborative environments where creativity meets clear brand guidelines.
-                        </p>
+
+                        <!-- Merged Skills Pills inline -->
+                        <div class="about-skills-inline">
+                            <span class="section-subtitle" style="margin-top: 1.2rem;">COMPETENCIES</span>
+                            <div class="expertise-pills-inline">
+                                <span class="expertise-pill-sm"><i class="fa-solid fa-pen-nib"></i> Graphic Design & Brand Identity</span>
+                                <span class="expertise-pill-sm"><i class="fa-solid fa-bullhorn"></i> Campaign & Marketing Assets</span>
+                                <span class="expertise-pill-sm"><i class="fa-solid fa-ticket"></i> Event & Poster Design</span>
+                                <span class="expertise-pill-sm"><i class="fa-solid fa-book-open"></i> Digital & Print Collateral</span>
+                                <span class="expertise-pill-sm"><i class="fa-solid fa-hashtag"></i> Social Media Visual Strategy</span>
+                                <span class="expertise-pill-sm"><i class="fa-solid fa-film"></i> Video Editing & Motion Design</span>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- Right: Software Tools Card -->
@@ -220,51 +228,8 @@
             </div>
         </section>
 
-        <!-- Skills & Expertise (Numbered Pill Showcase) -->
-        <section class="section-padding expertise-section">
-            <div class="container">
-                <div class="section-header text-center">
-                    <span class="section-subtitle">COMPETENCIES</span>
-                    <h2 class="section-title">Skills and Expertise</h2>
-                    <p class="section-desc">Translating client briefs into clean typography, purposeful layouts, and authentic imagery.</p>
-                </div>
-
-                <div class="expertise-pills-grid">
-                    <div class="expertise-pill">
-                        <span class="pill-number">1</span>
-                        <span class="pill-text">Graphic Design & Brand Identity</span>
-                    </div>
-
-                    <div class="expertise-pill">
-                        <span class="pill-number">2</span>
-                        <span class="pill-text">Campaign & Marketing Asset Creation</span>
-                    </div>
-
-                    <div class="expertise-pill">
-                        <span class="pill-number">3</span>
-                        <span class="pill-text">Event & Promotional Poster Design</span>
-                    </div>
-
-                    <div class="expertise-pill">
-                        <span class="pill-number">4</span>
-                        <span class="pill-text">Digital & Print Collateral</span>
-                    </div>
-
-                    <div class="expertise-pill">
-                        <span class="pill-number">5</span>
-                        <span class="pill-text">Social Media Visual Strategy</span>
-                    </div>
-
-                    <div class="expertise-pill">
-                        <span class="pill-number">6</span>
-                        <span class="pill-text">Conceptual Development & Mock-ups</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- Services Section -->
-        <section class="section-padding features-section" id="features">
+        <section class="section-padding-compact features-section" id="features">
             <div class="container">
                 <div class="section-header text-left">
                     <span class="section-subtitle">SERVICES</span>
@@ -347,8 +312,170 @@
             </div>
         </section>
 
-        <!-- Video Showcase / Motion Graphics Section -->
-        <section class="section-padding video-reels-section" id="video-reels">
+        <!-- Portfolio Showcase Section (PHOTOS FIRST — grid only, no case studies) -->
+        <section class="section-padding-compact portfolio-section" id="portfolio">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">DESIGN WORK</span>
+                    <h2 class="section-title">Featured Portfolio</h2>
+                    <p class="section-desc">Click any project to view details. For complete files, visit the Google Drive.</p>
+                </div>
+
+                <!-- Google Drive Banner CTA -->
+                <div class="gdrive-banner-card">
+                    <div class="banner-content">
+                        <i class="fa-brands fa-google-drive banner-icon"></i>
+                        <div>
+                            <h3>Access Tracy's Full Design Assets Drive</h3>
+                            <p>Explore complete brand design folders, national campaign prints, Uwezo Fund loan guides, and event posters.</p>
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1ewSvKbVpT0B9e52W6Tt0Et0tAZGUbwM8?usp=drive_link" target="_blank" class="btn btn-secondary">
+                        Open Google Drive <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+
+                <!-- Category Filters -->
+                <div class="portfolio-filter-nav">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="campaign">Govt & Infographics</button>
+                    <button class="filter-btn" data-filter="poster">Event & Movie Posters</button>
+                    <button class="filter-btn" data-filter="branding">Brand & Product Commercials</button>
+                </div>
+
+                <!-- Portfolio Grid -->
+                <div class="portfolio-grid">
+                    <!-- Project 1 -->
+                    <div class="portfolio-card" data-category="campaign"
+                         data-title="How to Apply for Uwezo Fund Guide"
+                         data-role="Graphic Designer (Ministry of Co-operatives and MSMEs)"
+                         data-badge="UWEZO FUND INFOGRAPHIC"
+                         data-desc="Designed the official national infographic guide outlining the 7-step application process for Uwezo Fund loans. Created clear typography, vibrant step callouts, and institutional branding compliant with Kenya Vision 2030 standards."
+                         data-tags="Official Government Infographic, 7-Step Loan Guide Layout"
+                         data-img="assets/images/uwezo_fund_apply_guide.jpg">
+                        <div class="portfolio-img-box">
+                            <img src="assets/images/uwezo_fund_apply_guide.jpg" alt="How to Apply for Uwezo Fund Infographic">
+                            <div class="portfolio-overlay">
+                                <span class="category-tag">Govt Infographic</span>
+                                <h3>How to Apply for Uwezo Fund Guide</h3>
+                                <button class="view-project-btn" aria-label="View project details"><i class="fa-solid fa-expand"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="portfolio-card" data-category="campaign"
+                         data-title="Utamaduni Day Commemorative Graphic"
+                         data-role="Graphic Designer (Ministry of Co-operatives and MSMEs)"
+                         data-badge="NATIONAL CELEBRATION GRAPHIC"
+                         data-desc="Designed a patriotic commemorative graphic for national celebrations. Delivered a clean composition, symbolic colour use, and culturally relevant elements that fully aligned with official government brand guidelines."
+                         data-tags="Uwezo Fund / Govt Guidelines, Cultural Diversity & Heritage"
+                         data-img="assets/images/utamaduni_day_real.jpg">
+                        <div class="portfolio-img-box">
+                            <img src="assets/images/utamaduni_day_real.jpg" alt="Utamaduni Day Commemorative Graphic">
+                            <div class="portfolio-overlay">
+                                <span class="category-tag">Govt Campaign</span>
+                                <h3>Utamaduni Day Commemorative Graphic</h3>
+                                <button class="view-project-btn" aria-label="View project details"><i class="fa-solid fa-expand"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="portfolio-card" data-category="poster"
+                         data-title=""3 SIMPS AND A GAL TOE TOE""
+                         data-role="Graphic Designer (Vibes And Laughs)"
+                         data-badge="ENTERTAINMENT EVENT"
+                         data-desc="Conceptualised and designed a bold promotional poster for an entertainment event. Delivered expressive typography, dynamic composition, and strong visual hierarchy that captured the show's playful energy while maintaining professional entertainment branding standards."
+                         data-tags="Guest Star: Avril, Comedy Music & Poetry"
+                         data-img="assets/images/3_simps_real.jpg">
+                        <div class="portfolio-img-box">
+                            <img src="assets/images/3_simps_real.jpg" alt="3 Simps and a Gal Toe Toe">
+                            <div class="portfolio-overlay">
+                                <span class="category-tag">Entertainment Poster</span>
+                                <h3>3 Simps and a Gal Toe Toe (Avril)</h3>
+                                <button class="view-project-btn" aria-label="View project details"><i class="fa-solid fa-expand"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="portfolio-card" data-category="poster"
+                         data-title="Old School Edition – Laughs Made In Kenya"
+                         data-role="Graphic Designer (Laughs Made In Kenya / SK Entertainment)"
+                         data-badge="RETRO COMEDY SHOW POSTER"
+                         data-desc="Led the visual concept and design execution for the event poster, focusing on bold typography, cohesive color grading, and retro-inspired styling to capture the 'Old School' theme. Ensured clear information hierarchy, engaging composition, and brand alignment."
+                         data-tags="Featuring Jua Cali, Argyle Grand Hotel Nairobi"
+                         data-img="assets/images/jua_cali_poster.jpg">
+                        <div class="portfolio-img-box">
+                            <img src="assets/images/jua_cali_poster.jpg" alt="Laughs Made In Kenya Old School Jua Cali">
+                            <div class="portfolio-overlay">
+                                <span class="category-tag">Comedy Event Poster</span>
+                                <h3>Laughs Made In Kenya (Jua Cali)</h3>
+                                <button class="view-project-btn" aria-label="View project details"><i class="fa-solid fa-expand"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="portfolio-card" data-category="branding"
+                         data-title="Crystal Cover-Matt Emulsion Commercial Banner"
+                         data-role="Freelance Graphic Designer (Crystal Paints)"
+                         data-badge="COMMERCIAL PRODUCT PROMO"
+                         data-desc="Designed a commercial product promotion banner for Crystal Cover-Matt Emulsion paint. Features 3D product bucket renders, high-contrast typography, product benefit highlights, and contact callouts."
+                         data-tags="Product Packaging Renders, High Hiding Power Campaign"
+                         data-img="assets/images/crystal_paints_emulsion.jpg">
+                        <div class="portfolio-img-box">
+                            <img src="assets/images/crystal_paints_emulsion.jpg" alt="Crystal Cover-Matt Emulsion Banner">
+                            <div class="portfolio-overlay">
+                                <span class="category-tag">Commercial Product</span>
+                                <h3>Crystal Cover-Matt Emulsion Banner</h3>
+                                <button class="view-project-btn" aria-label="View project details"><i class="fa-solid fa-expand"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6 -->
+                    <div class="portfolio-card" data-category="poster"
+                         data-title="Mbaa Ngumbi Movie Premiere"
+                         data-role="Graphic Designer (Tina Tales)"
+                         data-badge="MOVIE PREMIERE POSTER"
+                         data-desc="Designed a theatrical movie premiere poster for Mbaa Ngumbi at Argyle Grand Hotel. Delivered a red-carpet aesthetic with gold foil typography, cast photo manipulation, and clear ticketing hierarchy."
+                         data-tags="Film & Red Carpet Premiere, Sammy Kioko & Tom Daktari"
+                         data-img="assets/images/mbaa_ngumbi_full.jpg">
+                        <div class="portfolio-img-box">
+                            <img src="assets/images/mbaa_ngumbi_full.jpg" alt="Mbaa Ngumbi Movie Premiere Poster">
+                            <div class="portfolio-overlay">
+                                <span class="category-tag">Movie Premiere Poster</span>
+                                <h3>Mbaa Ngumbi Movie Premiere Poster</h3>
+                                <button class="view-project-btn" aria-label="View project details"><i class="fa-solid fa-expand"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 7 -->
+                    <div class="portfolio-card" data-category="branding"
+                         data-title="Crystal Paints Packaging Line"
+                         data-role="Freelance Graphic Designer (Crystal Paints)"
+                         data-badge="FACTORY & PACKAGING"
+                         data-desc="Captured and designed branded factory production imagery and packaging line visuals for Crystal Paints commercial portfolio."
+                         data-tags="Factory & Packaging, Production Line"
+                         data-img="assets/images/crystal_paints_worker.jpg">
+                        <div class="portfolio-img-box">
+                            <img src="assets/images/crystal_paints_worker.jpg" alt="Crystal Paints Production & Packaging">
+                            <div class="portfolio-overlay">
+                                <span class="category-tag">Factory & Packaging</span>
+                                <h3>Crystal Paints Packaging Line</h3>
+                                <button class="view-project-btn" aria-label="View project details"><i class="fa-solid fa-expand"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Showcase / Motion Graphics Section (AFTER PHOTOS) -->
+        <section class="section-padding-compact video-reels-section" id="video-reels">
             <div class="container">
                 <div class="section-header text-center">
                     <span class="section-subtitle">MOTION GRAPHICS & VIDEO REELS</span>
@@ -435,270 +562,8 @@
             </div>
         </section>
 
-        <!-- Portfolio Showcase Section -->
-        <section class="section-padding portfolio-section" id="portfolio">
-            <div class="container">
-                <div class="section-header text-center">
-                    <span class="section-subtitle">PROJECT CASE STUDIES</span>
-                    <h2 class="section-title">Featured Design Work</h2>
-                </div>
-
-                <!-- Google Drive Banner CTA -->
-                <div class="gdrive-banner-card">
-                    <div class="banner-content">
-                        <i class="fa-brands fa-google-drive banner-icon"></i>
-                        <div>
-                            <h3>Access Tracy's Full Design Assets Drive</h3>
-                            <p>Explore complete brand design folders, national campaign prints, Uwezo Fund loan guides, and event posters.</p>
-                        </div>
-                    </div>
-                    <a href="https://drive.google.com/drive/folders/1ewSvKbVpT0B9e52W6Tt0Et0tAZGUbwM8?usp=drive_link" target="_blank" class="btn btn-secondary">
-                        Open Google Drive <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </a>
-                </div>
-
-                <!-- REAL CASE STUDIES SHOWCASE LIST -->
-                <div class="case-studies-list">
-
-                    <!-- Case Study 1: Uwezo Fund How To Apply Guide -->
-                    <div class="featured-case-study">
-                        <div class="case-study-badge">UWEZO FUND INFOGRAPHIC</div>
-                        <div class="case-study-grid">
-                            <div class="case-study-content">
-                                <h3>How To Apply For Uwezo Fund – Step-by-Step Guide</h3>
-                                <span class="case-role">Role: Graphic Designer (Ministry of Co-operatives and MSMEs)</span>
-                                <div class="case-focus">
-                                    <strong>Focus Area:</strong>
-                                    <p>Designed the official national infographic guide outlining the 7-step application process for Uwezo Fund loans. Created clear typography, vibrant step callouts, and institutional branding compliant with Kenya Vision 2030 standards.</p>
-                                </div>
-                                <div class="case-highlights">
-                                    <span><i class="fa-solid fa-landmark"></i> Official Government Infographic</span>
-                                    <span><i class="fa-solid fa-list-check"></i> 7-Step Loan Guide Layout</span>
-                                </div>
-                                <a href="https://drive.google.com/drive/folders/1ewSvKbVpT0B9e52W6Tt0Et0tAZGUbwM8?usp=drive_link" target="_blank" class="btn btn-primary btn-sm">View Full Infographic <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            </div>
-                            <div class="case-study-preview">
-                                <img src="assets/images/uwezo_fund_apply_guide.jpg" alt="How to Apply for Uwezo Fund Infographic Guide">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Case Study 2: Utamaduni Day -->
-                    <div class="featured-case-study">
-                        <div class="case-study-badge">NATIONAL CELEBRATION GRAPHIC</div>
-                        <div class="case-study-grid">
-                            <div class="case-study-content">
-                                <h3>Utamaduni Day Commemorative Graphic</h3>
-                                <span class="case-role">Role: Graphic Designer (Ministry of Co-operatives and MSMEs)</span>
-                                <div class="case-focus">
-                                    <strong>Focus Area:</strong>
-                                    <p>Designed a patriotic commemorative graphic for national celebrations. Delivered a clean composition, symbolic colour use, and culturally relevant elements that fully aligned with official government brand guidelines.</p>
-                                </div>
-                                <div class="case-highlights">
-                                    <span><i class="fa-solid fa-landmark"></i> Uwezo Fund / Govt Guidelines</span>
-                                    <span><i class="fa-solid fa-flag"></i> Cultural Diversity & Heritage</span>
-                                </div>
-                                <a href="https://drive.google.com/drive/folders/1ewSvKbVpT0B9e52W6Tt0Et0tAZGUbwM8?usp=drive_link" target="_blank" class="btn btn-primary btn-sm">View In Drive <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            </div>
-                            <div class="case-study-preview">
-                                <img src="assets/images/utamaduni_day_real.jpg" alt="Utamaduni Day Commemorative Graphic">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Case Study 3: 3 SIMPS AND A GAL TOE TOE -->
-                    <div class="featured-case-study">
-                        <div class="case-study-badge">ENTERTAINMENT EVENT</div>
-                        <div class="case-study-grid">
-                            <div class="case-study-content">
-                                <h3>“3 SIMPS AND A GAL TOE TOE”</h3>
-                                <span class="case-role">Role: Graphic Designer (Vibes And Laughs)</span>
-                                <div class="case-focus">
-                                    <strong>Focus Area:</strong>
-                                    <p>Conceptualised and designed a bold promotional poster for an entertainment event. Delivered expressive typography, dynamic composition, and strong visual hierarchy that captured the show's playful energy while maintaining professional entertainment branding standards.</p>
-                                </div>
-                                <div class="case-highlights">
-                                    <span><i class="fa-solid fa-star"></i> Guest Star: Avril</span>
-                                    <span><i class="fa-solid fa-masks-theater"></i> Comedy, Music & Poetry</span>
-                                </div>
-                                <a href="https://drive.google.com/drive/folders/1ewSvKbVpT0B9e52W6Tt0Et0tAZGUbwM8?usp=drive_link" target="_blank" class="btn btn-primary btn-sm">View In Drive <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            </div>
-                            <div class="case-study-preview">
-                                <img src="assets/images/3_simps_real.jpg" alt="3 Simps and a Gal Toe Toe Event Poster">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Case Study 4: Old School Edition Laughs Made In Kenya -->
-                    <div class="featured-case-study">
-                        <div class="case-study-badge">RETRO COMEDY SHOW POSTER</div>
-                        <div class="case-study-grid">
-                            <div class="case-study-content">
-                                <h3>Old School Edition – Laughs Made In Kenya</h3>
-                                <span class="case-role">Role: Graphic Designer (Laughs Made In Kenya / SK Entertainment)</span>
-                                <div class="case-focus">
-                                    <strong>Focus Area:</strong>
-                                    <p>Led the visual concept and design execution for the event poster, focusing on bold typography, cohesive color grading, and retro-inspired styling to capture the “Old School” theme. Ensured clear information hierarchy, engaging composition, and brand alignment to create a visually striking and audience-targeted promotional asset.</p>
-                                </div>
-                                <div class="case-highlights">
-                                    <span><i class="fa-solid fa-music"></i> Featuring Jua Cali</span>
-                                    <span><i class="fa-solid fa-hotel"></i> Argyle Grand Hotel Nairobi</span>
-                                </div>
-                                <a href="https://drive.google.com/drive/folders/1ewSvKbVpT0B9e52W6Tt0Et0tAZGUbwM8?usp=drive_link" target="_blank" class="btn btn-primary btn-sm">View In Drive <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            </div>
-                            <div class="case-study-preview">
-                                <img src="assets/images/jua_cali_poster.jpg" alt="Laughs Made In Kenya Old School Edition Jua Cali">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Case Study 5: Crystal Cover-Matt Emulsion Banner -->
-                    <div class="featured-case-study">
-                        <div class="case-study-badge">COMMERCIAL PRODUCT PROMO</div>
-                        <div class="case-study-grid">
-                            <div class="case-study-content">
-                                <h3>Crystal Cover-Matt Emulsion Commercial Banner</h3>
-                                <span class="case-role">Role: Freelance Graphic Designer (Crystal Paints)</span>
-                                <div class="case-focus">
-                                    <strong>Focus Area:</strong>
-                                    <p>Designed a commercial product promotion banner for Crystal Cover-Matt Emulsion paint. Features 3D product bucket renders, high-contrast typography, product benefit highlights, and contact callouts.</p>
-                                </div>
-                                <div class="case-highlights">
-                                    <span><i class="fa-solid fa-paint-roller"></i> Product Packaging Renders</span>
-                                    <span><i class="fa-solid fa-bullhorn"></i> High Hiding Power Campaign</span>
-                                </div>
-                                <a href="https://drive.google.com/drive/folders/1ewSvKbVpT0B9e52W6Tt0Et0tAZGUbwM8?usp=drive_link" target="_blank" class="btn btn-primary btn-sm">View In Drive <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            </div>
-                            <div class="case-study-preview">
-                                <img src="assets/images/crystal_paints_emulsion.jpg" alt="Crystal Cover-Matt Emulsion Commercial Banner">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Case Study 6: Mbaa Ngumbi Movie Premiere -->
-                    <div class="featured-case-study">
-                        <div class="case-study-badge">MOVIE PREMIERE POSTER</div>
-                        <div class="case-study-grid">
-                            <div class="case-study-content">
-                                <h3>Mbaa Ngumbi Movie Premiere</h3>
-                                <span class="case-role">Role: Graphic Designer (Tina Tales)</span>
-                                <div class="case-focus">
-                                    <strong>Focus Area:</strong>
-                                    <p>Designed a theatrical movie premiere poster for Mbaa Ngumbi at Argyle Grand Hotel. Delivered a red-carpet aesthetic with gold foil typography, cast photo manipulation, and clear ticketing hierarchy.</p>
-                                </div>
-                                <div class="case-highlights">
-                                    <span><i class="fa-solid fa-clapperboard"></i> Film & Red Carpet Premiere</span>
-                                    <span><i class="fa-solid fa-star"></i> Sammy Kioko & Tom Daktari</span>
-                                </div>
-                                <a href="https://drive.google.com/drive/folders/1ewSvKbVpT0B9e52W6Tt0Et0tAZGUbwM8?usp=drive_link" target="_blank" class="btn btn-primary btn-sm">View In Drive <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            </div>
-                            <div class="case-study-preview">
-                                <img src="assets/images/mbaa_ngumbi_full.jpg" alt="Mbaa Ngumbi Movie Premiere Poster">
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- Category Filters -->
-                <div class="portfolio-filter-nav">
-                    <button class="filter-btn active" data-filter="all">All Projects</button>
-                    <button class="filter-btn" data-filter="campaign">Govt & Infographics</button>
-                    <button class="filter-btn" data-filter="poster">Event & Movie Posters</button>
-                    <button class="filter-btn" data-filter="branding">Brand & Product Commercials</button>
-                </div>
-
-                <!-- Portfolio Grid -->
-                <div class="portfolio-grid">
-                    <!-- Project 1 -->
-                    <div class="portfolio-card" data-category="campaign">
-                        <div class="portfolio-img-box">
-                            <img src="assets/images/uwezo_fund_apply_guide.jpg" alt="How to Apply for Uwezo Fund Infographic">
-                            <div class="portfolio-overlay">
-                                <span class="category-tag">Govt Infographic</span>
-                                <h3>How to Apply for Uwezo Fund Guide</h3>
-                                <a href="https://drive.google.com/drive/folders/1ewSvKbVpT0B9e52W6Tt0Et0tAZGUbwM8?usp=drive_link" target="_blank" class="view-project-btn"><i class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 2 -->
-                    <div class="portfolio-card" data-category="campaign">
-                        <div class="portfolio-img-box">
-                            <img src="assets/images/utamaduni_day_real.jpg" alt="Utamaduni Day Commemorative Graphic">
-                            <div class="portfolio-overlay">
-                                <span class="category-tag">Govt Campaign</span>
-                                <h3>Utamaduni Day Commemorative Graphic</h3>
-                                <a href="https://drive.google.com/drive/folders/1ewSvKbVpT0B9e52W6Tt0Et0tAZGUbwM8?usp=drive_link" target="_blank" class="view-project-btn"><i class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 3 -->
-                    <div class="portfolio-card" data-category="poster">
-                        <div class="portfolio-img-box">
-                            <img src="assets/images/3_simps_real.jpg" alt="3 Simps and a Gal Toe Toe">
-                            <div class="portfolio-overlay">
-                                <span class="category-tag">Entertainment Poster</span>
-                                <h3>3 Simps and a Gal Toe Toe (Avril)</h3>
-                                <a href="https://drive.google.com/drive/folders/1ewSvKbVpT0B9e52W6Tt0Et0tAZGUbwM8?usp=drive_link" target="_blank" class="view-project-btn"><i class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 4 -->
-                    <div class="portfolio-card" data-category="poster">
-                        <div class="portfolio-img-box">
-                            <img src="assets/images/jua_cali_poster.jpg" alt="Laughs Made In Kenya Old School Jua Cali">
-                            <div class="portfolio-overlay">
-                                <span class="category-tag">Comedy Event Poster</span>
-                                <h3>Laughs Made In Kenya (Jua Cali)</h3>
-                                <a href="https://drive.google.com/drive/folders/1ewSvKbVpT0B9e52W6Tt0Et0tAZGUbwM8?usp=drive_link" target="_blank" class="view-project-btn"><i class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 5 -->
-                    <div class="portfolio-card" data-category="branding">
-                        <div class="portfolio-img-box">
-                            <img src="assets/images/crystal_paints_emulsion.jpg" alt="Crystal Cover-Matt Emulsion Banner">
-                            <div class="portfolio-overlay">
-                                <span class="category-tag">Commercial Product</span>
-                                <h3>Crystal Cover-Matt Emulsion Banner</h3>
-                                <a href="https://drive.google.com/drive/folders/1ewSvKbVpT0B9e52W6Tt0Et0tAZGUbwM8?usp=drive_link" target="_blank" class="view-project-btn"><i class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 6 -->
-                    <div class="portfolio-card" data-category="poster">
-                        <div class="portfolio-img-box">
-                            <img src="assets/images/mbaa_ngumbi_full.jpg" alt="Mbaa Ngumbi Movie Premiere Poster">
-                            <div class="portfolio-overlay">
-                                <span class="category-tag">Movie Premiere Poster</span>
-                                <h3>Mbaa Ngumbi Movie Premiere Poster</h3>
-                                <a href="https://drive.google.com/drive/folders/1ewSvKbVpT0B9e52W6Tt0Et0tAZGUbwM8?usp=drive_link" target="_blank" class="view-project-btn"><i class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 7 -->
-                    <div class="portfolio-card" data-category="branding">
-                        <div class="portfolio-img-box">
-                            <img src="assets/images/crystal_paints_worker.jpg" alt="Crystal Paints Production & Packaging">
-                            <div class="portfolio-overlay">
-                                <span class="category-tag">Factory & Packaging</span>
-                                <h3>Crystal Paints Packaging Line</h3>
-                                <a href="https://drive.google.com/drive/folders/1ewSvKbVpT0B9e52W6Tt0Et0tAZGUbwM8?usp=drive_link" target="_blank" class="view-project-btn"><i class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- Resume & Experience Section -->
-        <section class="section-padding resume-section" id="resume">
+        <section class="section-padding-compact resume-section" id="resume">
             <div class="container">
                 <div class="section-header text-center">
                     <span class="section-subtitle">EXPERIENCE SUMMARY</span>
@@ -744,7 +609,7 @@
                         <div class="timeline-wrapper">
                             <div class="timeline-card">
                                 <span class="time-period">Higher Education</span>
-                                <h3>Bachelor’s Degree in Journalism And Mass Communication</h3>
+                                <h3>Bachelor's Degree in Journalism And Mass Communication</h3>
                                 <span class="company-name">Chuka University, Kenya</span>
                                 <p>Comprehensive grounding in visual storytelling, media production, public communication, strategic layout, and graphic design principles.</p>
                             </div>
@@ -815,7 +680,7 @@
         </section>
 
         <!-- Clients Section -->
-        <section class="section-padding clients-section" id="clients">
+        <section class="section-padding-compact clients-section" id="clients">
             <div class="container">
                 <div class="section-header text-center">
                     <span class="section-subtitle">KEY CLIENTS & PARTNERS</span>
@@ -858,7 +723,7 @@
         </section>
 
         <!-- Contact Section -->
-        <section class="section-padding contact-section" id="contact">
+        <section class="section-padding-compact contact-section" id="contact">
             <div class="container">
                 <div class="section-header text-center">
                     <span class="section-subtitle">CONTACT ME</span>
@@ -981,6 +846,28 @@
             <h3 class="video-modal-title" id="videoModalTitle">Watch Video Reel</h3>
             <div class="video-iframe-wrapper">
                 <iframe id="videoModalIframe" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Detail Modal -->
+    <div class="portfolio-modal-overlay" id="portfolioModalOverlay">
+        <div class="portfolio-modal-container">
+            <button class="portfolio-modal-close" id="portfolioModalCloseBtn"><i class="fa-solid fa-xmark"></i></button>
+            <div class="portfolio-modal-body">
+                <div class="portfolio-modal-image">
+                    <img id="portfolioModalImg" src="" alt="Project Preview">
+                </div>
+                <div class="portfolio-modal-info">
+                    <span class="portfolio-modal-badge" id="portfolioModalBadge"></span>
+                    <h2 class="portfolio-modal-title" id="portfolioModalTitle"></h2>
+                    <span class="portfolio-modal-role" id="portfolioModalRole"></span>
+                    <p class="portfolio-modal-desc" id="portfolioModalDesc"></p>
+                    <div class="portfolio-modal-tags" id="portfolioModalTags"></div>
+                    <a href="https://drive.google.com/drive/folders/1ewSvKbVpT0B9e52W6Tt0Et0tAZGUbwM8?usp=drive_link" target="_blank" class="btn btn-primary btn-sm">
+                        View In Drive <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
