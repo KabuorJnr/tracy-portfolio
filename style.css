@@ -1051,123 +1051,174 @@ body.light-version .moon-icon { display: block; }
     font-size: 0.95rem;
 }
 
-/* Category Filter */
-.portfolio-filter-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-bottom: 3rem;
-}
-
-.filter-btn {
-    padding: 0.7rem 1.4rem;
-    border-radius: 8px;
-    background-color: var(--card-bg);
-    color: var(--text-secondary);
-    font-size: 0.9rem;
-    font-weight: 600;
-    border: 1px solid var(--border-color);
-    box-shadow: var(--shadow-neumorphic);
-    transition: all 0.3s ease;
-}
-
-.filter-btn:hover, .filter-btn.active {
-    background-color: var(--accent-primary);
-    color: #FFFFFF;
-    border-color: var(--accent-primary);
-}
-
-/* Portfolio Grid */
-.portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-}
-
-.portfolio-card {
-    background-color: var(--card-bg);
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: var(--shadow-neumorphic);
-    border: 1px solid var(--border-color);
-    transition: all 0.4s ease;
-    cursor: pointer;
-}
-
-.portfolio-card.hide {
-    display: none;
-}
-
-.portfolio-img-box {
+/* Portfolio Slideshow */
+.portfolio-slideshow {
     position: relative;
     width: 100%;
-    height: 320px;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 20px;
     overflow: hidden;
+    background-color: var(--card-bg);
+    box-shadow: var(--shadow-neumorphic);
+    border: 1px solid var(--border-color);
 }
 
-.portfolio-img-box img {
+.slideshow-track {
+    position: relative;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
+    min-height: 480px;
 }
 
-.portfolio-card:hover .portfolio-img-box img {
-    transform: scale(1.08);
-}
-
-.portfolio-overlay {
+.slideshow-slide {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, rgba(22, 19, 18, 0.95) 0%, rgba(22, 19, 18, 0.3) 100%);
-    padding: 1.8rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.7s ease, visibility 0.7s ease, transform 0.7s ease;
+    transform: scale(1.03);
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    opacity: 0;
-    transition: opacity 0.3s ease;
 }
 
-.portfolio-card:hover .portfolio-overlay {
+.slideshow-slide.active {
     opacity: 1;
+    visibility: visible;
+    position: relative;
+    transform: scale(1);
 }
 
-.category-tag {
+.slide-img-box {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slide-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 6s ease;
+}
+
+.slideshow-slide.active .slide-img-box img {
+    transform: scale(1.05);
+}
+
+.slide-info {
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    background: var(--card-bg);
+    border-top: 1px solid var(--border-color);
+}
+
+.slide-info .category-tag {
     font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 1px;
     color: var(--accent-primary);
     text-transform: uppercase;
-    margin-bottom: 0.4rem;
+    background: rgba(204, 136, 0, 0.12);
+    padding: 0.3rem 0.8rem;
+    border-radius: 6px;
 }
 
-.portfolio-overlay h3 {
-    font-size: 1.2rem;
-    color: #FFFFFF;
-    margin-bottom: 1rem;
+.slide-info h3 {
+    flex: 1;
+    font-size: 1.15rem;
+    color: var(--text-primary);
+    font-weight: 600;
+    min-width: 150px;
 }
 
-.view-project-btn {
-    width: 44px;
-    height: 44px;
+/* Slideshow Arrows */
+.slideshow-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-70%);
+    z-index: 5;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
-    background-color: var(--accent-primary);
-    color: #FFFFFF;
+    background: rgba(22, 19, 18, 0.55);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.15);
+    font-size: 1.1rem;
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1rem;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-.view-project-btn:hover {
-    transform: scale(1.1);
+.slideshow-arrow:hover {
+    background: var(--accent-primary);
+    border-color: var(--accent-primary);
+    transform: translateY(-70%) scale(1.1);
 }
+
+.slideshow-prev {
+    left: 1rem;
+}
+
+.slideshow-next {
+    right: 1rem;
+}
+
+/* Slideshow Dots */
+.slideshow-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 0 1.5rem;
+    background: var(--card-bg);
+}
+
+.slideshow-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--border-color);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.slideshow-dot.active {
+    width: 32px;
+    border-radius: 5px;
+    background: var(--accent-primary);
+}
+
+/* Progress bar on active dot */
+.slideshow-dot.active::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background: rgba(255,255,255,0.35);
+    border-radius: inherit;
+    animation: dotProgress 4s linear forwards;
+}
+
+@keyframes dotProgress {
+    from { width: 0%; }
+    to { width: 100%; }
+}
+
 
 /* --- Resume & Skills Section --- */
 .resume-section {

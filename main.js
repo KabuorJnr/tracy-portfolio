@@ -330,5 +330,70 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+    /* --- 8. Portfolio Slideshow --- */
+    const slides = document.querySelectorAll('.slideshow-slide');
+    const dotsContainer = document.getElementById('slideshowDots');
+    const prevBtn = document.getElementById('slidePrev');
+    const nextBtn = document.getElementById('slideNext');
+    let currentSlide = 0;
+    let slideshowInterval;
+    const SLIDE_DURATION = 4000;
+
+    if (slides.length > 0 && dotsContainer) {
+        // Create dots
+        slides.forEach((_, i) => {
+            const dot = document.createElement('button');
+            dot.classList.add('slideshow-dot');
+            if (i === 0) dot.classList.add('active');
+            dot.setAttribute('aria-label', `Go to slide ${i + 1}`);
+            dot.addEventListener('click', () => goToSlide(i));
+            dotsContainer.appendChild(dot);
+        });
+
+        function goToSlide(index) {
+            slides[currentSlide].classList.remove('active');
+            const dots = dotsContainer.querySelectorAll('.slideshow-dot');
+            dots[currentSlide].classList.remove('active');
+
+            currentSlide = index;
+
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.remove('active');
+            // Force reflow to restart the dot progress animation
+            void dots[currentSlide].offsetWidth;
+            dots[currentSlide].classList.add('active');
+        }
+
+        function nextSlide() {
+            goToSlide((currentSlide + 1) % slides.length);
+        }
+
+        function prevSlide() {
+            goToSlide((currentSlide - 1 + slides.length) % slides.length);
+        }
+
+        // Arrow controls
+        if (nextBtn) nextBtn.addEventListener('click', () => { nextSlide(); resetAutoplay(); });
+        if (prevBtn) prevBtn.addEventListener('click', () => { prevSlide(); resetAutoplay(); });
+
+        // Auto-play
+        function startAutoplay() {
+            slideshowInterval = setInterval(nextSlide, SLIDE_DURATION);
+        }
+
+        function resetAutoplay() {
+            clearInterval(slideshowInterval);
+            startAutoplay();
+        }
+
+        startAutoplay();
+
+        // Pause on hover
+        const slideshowEl = document.getElementById('portfolioSlideshow');
+        if (slideshowEl) {
+            slideshowEl.addEventListener('mouseenter', () => clearInterval(slideshowInterval));
+            slideshowEl.addEventListener('mouseleave', startAutoplay);
+        }
+    }
 
 });
