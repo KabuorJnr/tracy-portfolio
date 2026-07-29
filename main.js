@@ -11,8 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "Graphic Designer.",
         "Visual Artist.",
         "Brand & Campaign Strategist.",
-        "Publication & Event Designer.",
-        "Uwezo Fund & KBC Designer."
+        "Publication & Event Designer."
     ];
     let roleIndex = 0;
     let charIndex = 0;
