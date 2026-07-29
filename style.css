@@ -1013,8 +1013,10 @@ body.light-version .moon-icon { display: block; }
 
 .case-study-preview img {
     width: 100%;
-    height: 340px;
-    object-fit: cover;
+    height: auto;
+    max-height: 480px;
+    object-fit: contain;
+    background-color: var(--bg-secondary);
 }
 
 /* Google Drive Banner */
@@ -1093,14 +1095,18 @@ body.light-version .moon-icon { display: block; }
 
 .slide-img-box {
     width: 100%;
-    height: 400px;
+    height: 480px;
     overflow: hidden;
+    background-color: var(--bg-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .slide-img-box img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     transition: transform 6s ease;
 }
 
